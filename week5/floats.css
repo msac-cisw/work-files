@@ -1,0 +1,27 @@
+div {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #000000;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px;
+    float: left;
+ }
+ div#d1 {
+    background-color: lightcyan;
+    /* float: left; */
+ }
+ div#d2 {
+    background-color: lightseagreen;
+    /* float: left; */
+ }
+ div#d3 {
+    background-color: plum;
+    /* float: left; */
+    float: right;
+ }
+ div#d4 {
+    background-color: lightyellow;
+    /* float: right; */
+ }

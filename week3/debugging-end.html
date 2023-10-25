@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging HTML</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0 auto;
+            color: darkslategrey;
+            background-color: #fefefe;
+            font-size: 18px;
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.3em;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        pre {
+            background-color: lightgray;
+            padding: 15px 0 0 0;
+            border: dashed gray;
+        }
+        code {
+            font-size: 16px;
+            background-color: lightgray;
+        }
+        footer {
+            background-color: gray;
+            color: #fff;
+            padding: 20px 0 5px 35px;
+            font-style: italic;
+            margin-top: 25px;
+        }
+        .note {
+            font-size: 0.9em;
+            margin-left: 25px;
+            font-weight: 300;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Anatomy of an HTML document</h1>
+    </header>
+    <main>
+    <em><p class="note">This page is <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">excerpted from the Mozilla dev network</a>.</p></em>
+
+    <p>Let's take a look at the elements of an HTML webpage.</p>
+
+<code>
+    <pre>
+    &lt;!doctype html&gt;
+        &lt;html lang="en-US"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8" /&gt;
+            &lt;meta name="viewport" 
+                content="width=device-width" /&gt;
+            &lt;title&gt;My test page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;img src="http://placekitten.com/400/300"
+                alt="My test image" /&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+</code>
+
+    <p>We have the following elements in the above example:</p>
+
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code> &#8212; Required to make sure your document behaves correctly</li>
+        <li><code>&lt;html&gt;&lt;/html&gt;</code> &#8212; The root element. It wraps all the content and is where you set the language.</li>
+        <li><code>&lt;head&gt;&lt;/head&gt;</code>  &#8212; This is the container for the information you include on the HTML page, but is not displayed in the content. This includes a page description, comments, css, character set, keywords, and more.</li>
+        <li><code>&lt;meta charset="utf-8"&gt;</code>  &#8212; Sets the character set of your document. You should use UTF-8.</li>
+        <li><code>&lt;meta name="viewport" content="width=device-width"&gt;</code>  &#8212; Ensures the page renders at the width of the viewport. Use this to keep mobile browsers from displaying pages too wide.</li>
+        <li><code>&lt;title&gt;&lt;/title&gt</code>  &#8212; Sets the title of your page which is displayed in the tab bar and the bookmark bar.</li>
+        <li><code>&lt;body&gt;&lt;/body&gt</code>  &#8212; This contains <em>all</em> of your content.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Directions</h2>
+
+    <p>Download the debugging worksheet html code and open that in your editor. Using this page as a reference for the final page design, <strong>find and correct all of the errors</strong> in the HTML source code.</p>
+
+    <footer>
+        <p><small>CISW 17 Debugging Worksheet</small></p>
+    </footer>
+    </main>
+
+    
+</body>
+</html>

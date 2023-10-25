@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+.title {
+    grid-column: span 3;
+    text-align: center;
+    background-color: lightgreen;
+    border: dashed gray 1px;
+    padding: 1em;
+}
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 60rem;
+}
+.boxes div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4rem;
+    font-size: 3rem;
+    background-color: lightblue;
+    height: 600px;
+    border: dashed gray 1px;
+
+}

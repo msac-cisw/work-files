@@ -1,0 +1,47 @@
+/* This is my basic style template for classroom presentations. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fefefe;
+    color: #0e0e0e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+/* target the a element to style links */
+a {
+    /* remove the underline */
+    text-decoration: none;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+a:link {
+    color: rebeccapurple;
+}
+a:visited {
+    color: pink;
+}
+a:hover {
+    color: burlywood;
+    font-size: 1.1em;
+    padding-left: 10px;
+}
+#roar {
+    font-size: 5em;
+    text-align: center;
+}

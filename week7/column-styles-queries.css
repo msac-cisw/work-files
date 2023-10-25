@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(251, 251, 251, 0.979);
+}
+h1 {
+    font-weight: 800;
+    text-align: center;
+    background-color: lightyellow;
+}
+article, p {
+    margin-top: 0;
+    line-height: 1.5em;
+    padding: 0 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Create a style just for the min-width: 750px */
+@media screen and (min-width:750px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    article {
+        column-width: 300px;
+        padding: 0 25px;
+    }    
+}
+
+/* Create a style for 749 and smaller */
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background-color: lightgreen;
+    }
+    article {
+        column-width: 400px;
+    }
+}

@@ -1,0 +1,38 @@
+div {
+    width: 250px;
+    height: 100px;
+    border: 5px solid #000000;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px;
+ }
+ div#d1 {
+    background-color: lightcyan;
+    position: fixed;
+    /* relative to the viewport */
+    top: 100px;
+    right: 25px;
+
+ }
+ div#d2 {
+    background-color: lightseagreen;
+    position: absolute;
+    /* positioned relative to the nearest positioned ancestor  */
+    top: 50%;
+    left: 50%;
+ }
+ div#d3 {
+    background-color: plum;
+    position: sticky;
+    height: 50px;
+    top: 0;
+    z-index: 10;
+ }
+ div#d4 {
+    background-color: lightyellow;
+    position: relative; 
+    /* relative to it's normal position */
+    left: -25px;
+    padding: 700px 0;
+ }
