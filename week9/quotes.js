@@ -28,11 +28,11 @@ function getQuote() {
 
     // generate a random number
     // between 0 and the length of the array
-    let i = Math.floor(Math.random() * quotes.length)
+    let random_quote = Math.floor(Math.random() * quotes.length)
 
     // we can rewrite the innerHTML
-    quote.innerHTML = quotes[i];
-    source.innerHTML = sources[i];
+    quote.innerHTML = quotes[random_quote];
+    source.innerHTML = sources[random_quote];
 }
 
 getQuote();
