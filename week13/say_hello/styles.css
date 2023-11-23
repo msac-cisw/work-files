@@ -1,0 +1,8 @@
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: rgb(28,28,28);
+    color: rgb(238,238,238);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
