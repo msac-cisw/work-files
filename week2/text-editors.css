@@ -1,0 +1,23 @@
+body {
+    /* to center the webpage, define the width, and margin */
+    /* width: 70%; */
+    background-color: antiquewhite;
+    color: rebeccapurple;
+    font-size: 25px;
+    border: 2px dotted black;
+}
+h1 {
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+}
+h2 {
+    color: dodgerblue;
+}
+.warning {
+    color: rgb(223, 98, 98);
+}
+#vscode {
+    color: brown;
+    padding-left: 50px;
+}
