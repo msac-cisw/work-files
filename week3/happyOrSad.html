@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Happy or Sad?</title>
+    <!-- Sable Cantus
+            CISW 17 -->
+</head>
+
+<body>
+    <h1>How are you feeling right now?</h1>
+
+    <p>
+        <button
+            onclick="document.getElementById('happyOrSad').src='img/happy.png'"
+        >I'm feeling happy</button>
+        <button
+            onclick="document.getElementById('happyOrSad').src='img/pika.png'"
+        >I'm feeling fine</button>
+        <button
+            onclick="document.getElementById('happyOrSad').src='img/sad.jpg'"
+        >I'm feeling sad</button>
+    </p>
+    <p>
+        <!-- Change this when the buttons are pushed -->
+        <!-- We need to give the img an id so we can target it -->
+        <img id="happyOrSad" src="img/pika.png" width="400px">
+    </p>
+
+</body>
+
+</html>
