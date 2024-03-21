@@ -1,0 +1,77 @@
+body {
+    margin: auto;
+    max-width: 600px;
+    /* background-color: rgb(28,28,28); */
+    /* background-color: rgb(6, 18, 28); */
+    background-color: rgba(247,244,209, 0.5);
+    /* color: rgb(247, 245, 245); */
+    color: rgb(29,27,25);
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+pre {
+    font-family: monospace;
+    background-color: gray;
+    padding: 25px;
+}
+
+h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(29,27,25);
+    /* text-align: center; */
+}
+/* CSS for navigation affects global lists */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    background-color: rgb(230, 230, 230);  
+}
+li a {
+    display: block;
+    /* width: 100%; */
+    text-decoration: none;
+    padding-left: 50px;
+}
+li a:hover {
+    background-color: rebeccapurple;
+    color: rgb(239, 239, 239);
+}
+
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+font-weight: bold;
+margin: -0.5em -0.5em 0;
+padding: 0.5em;
+}
+
+details[open] {
+padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+#bottom {
+    padding-bottom: 100px;
+}
+
+.giant_emoji {
+    text-align: center;
+    font-size: 10em;
+}
+
+.tall {
+    height: 2000px;
+}
