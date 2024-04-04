@@ -1,0 +1,32 @@
+body {
+    /* here is css flexbox */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    grid-column: span 3;
+    text-align: center;
+    background-color: lightgreen;
+    border: dashed gray 1px;
+    padding: 1em;
+    color: black;
+}
+.boxes {
+    /* here we use CSS Grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 60rem;
+}
+.boxes div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4rem;
+    font-size: 2.5rem;
+    background-color: lightyellow;
+    color: black;
+    height: 600px;
+    border: dashed gray 1px;
+}

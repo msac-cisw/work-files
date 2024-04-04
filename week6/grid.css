@@ -1,0 +1,39 @@
+/* Define Grid Template Areas */
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: menu;
+}
+main { 
+    grid-area: main;
+}
+aside {
+    grid-area: right;
+}
+footer {
+    grid-area: footer;
+}
+
+/* setup the container */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'footer footer footer footer footer footer';
+    grid-template-rows: 5em 1fr 5em;
+    grid-template-columns: 8em 1fr 8em;
+    gap: 15px;
+    background-color: #C04FF0;
+    padding: 10px;
+    color: black;
+    min-height: 600px;
+}
+header, nav, main, aside, footer {
+    background-color: lightyellow;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
