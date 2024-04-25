@@ -1,29 +1,30 @@
-// variables.js
-// var
-// let
-// const
+/*
+variables.js
 
-let message = "Hello, CISW 17 students.";
-console.log(message);
+var     - only if needed
+let     - general usage
+const   - only for unchanging constants
 
-// variables are case sensitive
-// message / Message / MESSAGE are all different
+variables are CASE SeNSitive
 
-// ways to name our variables
-// camelCase
-// let myMessage 
+message / Message / MESSAGE = different
+
+use: camelCase - myMessage
+     snake_case - my_message
+*/ 
 
 let myMessage = "Hello, camelCase.";
 console.log(myMessage);
 
-// use snake_case
-
 const my_message = "Hello, snake_case.";
 console.log(my_message);
 
-// this will fail because my_message is a constant
-// my_message = "New message";
+// my_message = "New message.";
+// this fails because my_message is a const
 
-message = "Hello, developers.";
+// Challenge: Create a message that says
+// "I love programming in JavaScript!"
+// and print that to the console.
+
+let message = "I love programming in JavaScript!";
 console.log(message);
-

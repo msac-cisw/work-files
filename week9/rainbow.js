@@ -1,13 +1,9 @@
 // rainbow.js
-// pick a random color from a list of colors
 
-/* 
-    lists are counted starting at 0
+// Create a list of colors and then choose a
+// random color
 
-    0   1      2      3
-    red orange yellow green
-*/
-
+// list of colors to change the background
 const colors = [
     "red",
     "orange",
@@ -18,16 +14,22 @@ const colors = [
     "violet"
 ];
 
-// declare the variable for color choice
-let color_choice;
+// pick a random number
+// use Math.floor to round DOWN to 0
+// let x = Math.floor(Math.random() * 7);
+// let color_choice = colors[x];
 
-// pick a random number for the color
-let x = Math.floor(Math.random() * 7);
-color_choice = colors[x];
+// print your choice to the console
+// console.log("The color is", color_choice);
 
-// print the color choice
-console.log(color_choice);
+// Create a function to change the background
+// color to color_choice
 
+function changeBackgroundColor() {
+    let x = Math.floor(Math.random() * 7);
+    let color_choice = colors[x];
+    console.log("The color is", color_choice);
+    document.body.style.backgroundColor = color_choice;
+}
 
-
-
+changeBackgroundColor();
