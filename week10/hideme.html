@@ -7,33 +7,29 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
     <script src="hideme.js" defer></script>
-    <title>Hide Me</title>
+    <title>Hide Me!</title>
     <!-- Sable Cantus
-         Hide Me -->
+         CISW 17 -->
 </head>
 
 <body class="w3-container">
     <header class="w3-center">
-        <h1 class="w3-blue">Hide Me!</h1>
+        <h1>Hide Me!</h1>
     </header>
-    <main>
-        <p>Let's use JavaScript to hide a section on the page.</p>
-        
-        <div id="hideme" class="hide"
-            style="background-color: lightyellow; border: 1px dotted gray; padding: 10px 10px;">
-            <p>I want to go away!</p>
-        </div>
+    <p>Use JavaScript to hide or show a section on this page when a button is clicked.</p>
+    <!-- Create an element to hide -->
+    <div id="hideme">
+        <p class="yellow">Hide me when you press the button.</p>
+    </div>
 
-        <div id="message">
-            <!-- There is no html here ... yet -->
+    <div id="showme" style="display: none;">
+        <!-- Show this div when the button is pressed -->
+        <p class="yellow">You pressed the button!</p>
+    </div>
 
-        </div>
-
-        <br>
-        <button id="button">Go Away!</button>
-    </main>
-    <footer>
-    </footer>
+    <!-- Create a button -->
+    <button id="button">Go Away!</button>
+    <button id="comeback" style="display: none;">Come Back!</button>
 </body>
 
 </html>

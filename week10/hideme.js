@@ -1,21 +1,27 @@
-// define variables
-let button = document.getElementById('button');
-let hideme = document.getElementById('hideme');
-let message = document.getElementById('message');
+// hideme.js
 
-// create a function to make the div go away
+// define vars
+const button = document.getElementById("button");
+const hideme = document.getElementById("hideme");
+const showme = document.getElementById("showme");
+const comeback = document.getElementById("comeback");
 
+// create a function to hide the div
 function goAway() {
-    // hide the "hideme" div
-    // console.log("clicked")
-    hideme.style.display = "none"
-    button.style.display = "none"
-    let your_name = prompt("What is your name?")
-    let secret_message = `<h2>Hello, ${your_name}!</h2>`
-    message.innerHTML = secret_message
+    hideme.style.display = "none";
+    button.style.display = "none";
+    showme.style.display = "inline";
+    comeback.style.display = "inline";
 }
 
-// create an event listener to call the function when the
-// button is clicked
+// create a function to reset
+function comeBack() {
+    hideme.style.display = "inline";
+    button.style.display = "inline";
+    showme.style.display = "none";
+    comeback.style.display = "none";
+}
 
+// create event listener when the button is clicked
 button.addEventListener("click", goAway);
+comeback.addEventListener("click", comeBack);
