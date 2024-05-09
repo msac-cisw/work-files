@@ -1,4 +1,5 @@
-// Rock, Paper, Scissors
+// Rock, Paper, Scissors - the easy way
+// Run this in your cli
 
 let greeting = `Welcome to Rock 🪨, Paper 📄, Scissors ✂️ - a game of chance 🎲. 
 
@@ -9,27 +10,30 @@ Paper beats Rock
 Scissors beats Paper\n`
 console.log(greeting)
 
-// Have the computer pick
+// Generate the computer_choice
+let i = Math.floor(Math.random() * 3);
 let choices = ['r','p','s'];
-let x = Math.floor(Math.random() * 3);
-let computer_choice = choices[x];
+let computer_choice = choices[i]
 
-// ask the player to pick one
-let player_choice = prompt("Choose Rock, Paper, or Scissors (r/p/s):");
+// Get the players choice
+let player_choice = prompt("Choose: Rock, Paper, or Scissors (r/p/s): ");
+player_choice = player_choice[0].toLowerCase();       // gets the first letter
 
-// display the results
-console.log(`The computer picked ${computer_choice}`);
-console.log(`You picked ${player_choice}`);
+// Log the choices
+console.log(`You picked: ${player_choice}`)
+console.log(`Computer picked: ${computer_choice}`)
 
-// figure out win/lose/tie
-if    (player_choice == 'r' && computer_choice == 's'
-    || player_choice == 'p' && computer_choice == 'r'
-    || player_choice == 's' && computer_choice == 'p') {
-        console.log("You win!")
-} else if (player_choice == computer_choice) {
-    console.log("It's a tie.")
+if (player_choice == 'r' && computer_choice == 's' ||
+    player_choice == 'p' && computer_choice == 'r' ||
+    player_choice == 's' && computer_choice == 'p'
+) {
+    // you win
+    console.log("You win!")
+} else if ( player_choice == computer_choice ) {
+    // check for a tie
+    console.log("It's a tie!")
 } else {
+    // computer wins
     console.log("Computer wins.")
 }
-
-console.log("Thanks for playing 👋");
+console.log("Thanks for playing!")

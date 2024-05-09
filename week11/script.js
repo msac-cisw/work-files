@@ -1,9 +1,7 @@
-// birthday webpage
 let message = document.getElementById("message");
-let bday_pic = document.getElementById("bday_pic");
 
-// change this manually!!!!
-let bday = new Date(1996, 10, 9);
+// Set our birthday manually
+let bday = new Date(1996, 4, 8);
 let bd_month = bday.getMonth();
 let bd_day = bday.getDate();
 
@@ -11,11 +9,11 @@ let today = new Date();
 let month = today.getMonth();
 let day = today.getDate();
 
-// check if the month and day are the same
-if ( day == bd_day && month == bd_month) {
-    message.innerHTML = "🎂 Happy Birthday! 🥳";
-    bday_pic.src = "img/birthday_cupcakes.png";
+// compare dates and output the message
+if ( day == bd_day && month == bd_month ) {
+    // change the message to happy birthday
+    message.innerHTML = "🎂 Happy Birthday! 🥳"
 } else {
-    message.innerHTML = "It's not your birthday.";
-    bday_pic.src = "img/sad_puppy.jpg";
+    // change the message to it's not ...
+    message.innerHTML = "It's not your birthday."
 }
