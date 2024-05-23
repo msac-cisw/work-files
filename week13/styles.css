@@ -1,0 +1,54 @@
+/*
+* rgba(253,245,230)     light background
+* rgb(27,27,27)         dark foreground
+* rgb(210,105,51)        burnt orange
+* #5F80AA               gray/blue
+* #806432               dark brown
+* #BFA771               light brown
+* #E8F2FF               light blue/gray
+*/
+body {
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(253, 245, 230);
+    color: rgb(27,27,27);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+pre {
+    font-family: monospace;
+    background-color: gray;
+    padding: 25px;
+}
+
+h1 {
+    color: #5F80AA;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+font-weight: bold;
+margin: -0.5em -0.5em 0;
+padding: 0.5em;
+}
+
+details[open] {
+padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+  }
+
+#result {
+    color: rgb(21, 246, 21);
+}
