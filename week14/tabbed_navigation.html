@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tabbed_navigation.css">
+    <script src="tabbed_navigation.js" defer></script>
+    <title>Tabbed Navigation</title>
+    <!-- Sable Cantus
+         CISW 17 -->
+</head>
+
+<body class="w3-container">
+    <h1 class="w3-center">Tabbed Navigation</h1>
+
+    <!-- Create the menu - not <li> but as buttons -->
+    <!-- We'll use the w3-bar class -->
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablinks current"          
+            onclick="openCity(event, 'london')">
+            London
+        </button>
+
+        <button class="w3-bar-item w3-button tablinks" 
+            onclick="openCity(event, 'paris')">
+            Paris
+        </button>
+
+        <button class="w3-bar-item w3-button tablinks" 
+            onclick="openCity(event, 'tokyo')">
+            Tokyo
+        </button>
+    </div>
+    <!-- Create a div for the content -->
+    <div class="w3-border w3-container w3-white">
+        <!-- Create 3 divs inside for the cities -->
+        <div id="london" class="city">
+            <h2>London</h2>
+            <p>The London Underground is the oldest underground railway system in the world, with the first section opening in 1863</p>
+        </div>
+
+        <div id="paris" class="city" style="display: none;">
+            <h2>Paris</h2>
+            <p>The Louvre is the world's largest and most visited art museum, housing over 38,000 works of art including the famous Mona Lisa painting.</p>
+        </div>
+            
+        <div id="tokyo" class="city" style="display: none;">
+            <h2>Tokyo</h2>
+            <p>Tokyo is home to the world's busiest intersection, the Shibuya Crossing, where as many as 2,500 people cross at once when the lights turn green.It's known as "the incredible scramble."</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
